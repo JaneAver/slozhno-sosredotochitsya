@@ -233,20 +233,26 @@
     margin-inline-start: 0;
   }
 }
+
 /* Header end */
 
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  padding-block: 4rem;
-  padding-inline: 1rem;
+.section-concentrated {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding-block: 20px;
+  padding-inline: 20px;
 }
 
-.main-section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.section-concentrated-second {
+  padding-block: 20px;
+  padding-inline: 20px;
+}
+
+@media (width <= 767px) {
+  .section-concentrated {
+    grid-template-columns: 1fr;
+  }
 }
 
 .main-title {
@@ -254,16 +260,18 @@
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
-  line-height: 2.34rem;
+  line-height: 1.4625rem;
+  max-inline-size: 315px;
+  padding-bottom: 20px;
 }
 
 .article {
-  display: grid;
-  grid-template-columns: 315px 649px;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.article-texts {
+.article-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -291,10 +299,16 @@
   line-height: 23.4px; /* 130% */
 }
 
-.article-second {
+.article-section {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,1fr);
+  gap: 20px;
+}
+
+@media (width <= 1023px) {
+  .article-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 .active-hyperlink {
@@ -323,39 +337,57 @@
   object-fit: cover;
 }
 
-.image-sunset:first-of-type {
+.image-sunset {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.image-ice-cream:nth-of-type(2){
+.image-ice-cream {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.image-books:nth-of-type(4){
+.image-books {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.image-city:last-of-type {
+.image-city {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
-.image-tape:nth-of-type(3) {
+.image-tape {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 4;
+}
+
+@media (width <= 767px) {
+  .image-gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-sunset,
+  .image-ice-cream,
+  .image-books,
+  .image-city,
+  .image-tape {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
 }
 
 .footer {
