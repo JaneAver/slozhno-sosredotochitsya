@@ -151,7 +151,6 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82,8%;
   text-shadow: 0.4rem 0.4rem 0 var(--secondary-color, #FF0070);
-  font-size: 157px;
   margin-inline-start: -20px;
 }
 

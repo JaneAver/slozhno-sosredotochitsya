@@ -39,7 +39,7 @@
   text-shadow: 4px 4px 0 var(--secondary-color, #ff0070);
 }
 
-.page.theme_dark .text-decor{
+.page.theme_dark .text-decor {
   color: var(--primary-color, #000028);
 }
 
