@@ -1,22 +1,30 @@
 .page.theme_light {
-  --accent-color-theme_dark: #FF0070;
-  --primary-color: #fff1f7;
-  --secondary-color: #ff8dcb;
-  --accent-color: #f1b2ce;
-  --text-color: #353430;
-  --hover-color: #32312d66;
-  --main-font: 'IBM Plex Mono', sans-serif;
+  background-image: var(--background-image-light);
 }
 
 .page.theme_light .element-rec {
   display: none;
 }
 
-.page.theme_light .header {
-  background-image: url('../images/cover-image-light.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.page.theme_light .header__title {
+  text-shadow: 0.4rem 0.4rem 0 var(--accent-color-theme_dark, #ff0070);
 }
+
+.page.theme_light .footer__title {
+  text-shadow: 2px 2px 0 var(--secondary-color, #ff0070);
+}
+
+.page.theme_light .header__title {
+    text-shadow: 0.4rem 0.4rem 0 var(--secondary-color, #ff8dcb);
+}
+
+.page.theme_light .footer__title {
+    text-shadow: 2px 2px 0 var(--secondary-color, #ff8dcb);
+}
+
+
+
+  
+  
+
 

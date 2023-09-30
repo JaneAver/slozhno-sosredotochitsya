@@ -1,28 +1,7 @@
-:root {
-  --primary-color: #000028;
-  --secondary-color: #ff0070;
-  --accent-color: #db00ff;
-  --text-color: #f1b2ce;
-  --hover-color: #ff007066;
-  --background-image: url("../images/cover-image-dark.png");
-}
-
 .page.theme_dark {
   min-inline-size: 375px;
   block-size: 100%;
   background-image: var(--background-image);
-  background-color: var(--primary-color, #000028);
-}
-
-.page.theme_dark .header {
-  position: relative;
-  background-image: var(--background-image);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
- }
-
-.page.theme_dark .title-decor {
   background-color: var(--primary-color, #000028);
 }
 
