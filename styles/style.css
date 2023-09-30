@@ -27,24 +27,24 @@
 }
 
 .corners::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--secondary-color, #FF0070);
+  border-top: 1px solid var(--secondary-color, #ff0070);
   border-right: 1px solid var(--secondary-color, #ff0070);
   top: 20px;
   right: 20px;
 }
 
 .corners::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--secondary-color, #FF0070);
+  border-bottom: 1px solid var(--secondary-color, #ff0070);
   border-left: 1px solid var(--secondary-color, #ff0070);
   bottom: 20px;
   left: 20px;
@@ -55,7 +55,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  color: var(--secondary-color, #FF0070);
+  color: var(--secondary-color, #ff0070);
   min-inline-size: 60px;
   max-height: 26px;
   flex-shrink: 0;
@@ -66,13 +66,13 @@
 }
 
 .element-rec::after {
-  content: '';
+  content: "";
   height: 9px;
   width: 9px;
   display: block;
   border-radius: 50%;
-  background-color: var(--secondary-color, #FF0070);
-  box-shadow: 0px 0px 4px var(--secondary-color, #FF0070);
+  background-color: var(--secondary-color, #ff0070);
+  box-shadow: 0px 0px 4px var(--secondary-color, #ff0070);
   margin-left: 10px;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .header__theme-menu-item {
-  color: var(--secondary-color, #FF0070);
+  color: var(--secondary-color, #ff0070);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.125rem; /* 100% */
@@ -112,7 +112,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--secondary-color, #FF0070);
+  border-block-end: 1px solid var(--secondary-color, #ff0070);
 }
 
 .header__theme-menu-button:hover {
@@ -129,7 +129,7 @@
   color: var(--accent-color, #db00ff);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 8.09531rem;
-  text-shadow: 0.4rem 0.4rem 0 var(--secondary-color, #FF0070);
+  text-shadow: 0.4rem 0.4rem 0 var(--secondary-color, #ff0070);
   margin-inline-start: -20px;
 }
 
@@ -142,10 +142,10 @@
 .header-content {
   max-inline-size: 30.6875rem;
   color: var(--primary-color, #000028);
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 1.125rem;
   font-weight: 700;
-  line-height: 1.4795rem; 
+  line-height: 1.4795rem;
   white-space: pre-line;
 }
 
@@ -202,7 +202,7 @@
 }
 
 .article-text {
-  color: var(--text-color,#F1B2CE);
+  color: var(--text-color, #f1b2ce);
   font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
@@ -212,7 +212,7 @@
 
 .article-section {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -252,7 +252,7 @@
   object-fit: cover;
 }
 
-picture:first-of-type{
+picture:first-of-type {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -310,8 +310,8 @@ picture:last-of-type {
 
 @media (width <= 1023px) {
   .header__theme-menu {
-     justify-content: flex-end;
-     align-items: center;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .header__theme-menu-list {
@@ -333,8 +333,6 @@ picture:last-of-type {
   .article-section {
     grid-template-columns: 1fr;
   }
-
-  
 }
 
 @media (width <= 767px) {
@@ -344,17 +342,17 @@ picture:last-of-type {
     padding-block: 10px;
     padding-inline: 10px;
   }
-    
+
   .corners::before {
     top: 10px;
     right: 10px;
   }
-  
+
   .corners::after {
     bottom: 10px;
     left: 10px;
   }
-  
+
   .element-rec {
     top: 10px;
     right: 10px;
@@ -365,7 +363,6 @@ picture:last-of-type {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
-
   .section-concentrated {
     grid-template-columns: 1fr;
     padding: 40px 10px 10px;
@@ -373,7 +370,6 @@ picture:last-of-type {
 
   .main-title {
     max-inline-size: 355px;
-    padding-bottom: 0;
   }
 
   .image-gallery-wrapper {
@@ -390,8 +386,6 @@ picture:last-of-type {
 
   .footer {
     padding-block: 10px;
-    padding-inline: 10px;  
+    padding-inline: 10px;
   }
-  
-  }
-
+}

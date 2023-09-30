@@ -15,16 +15,9 @@
 }
 
 .page.theme_light .header__title {
-    text-shadow: 0.4rem 0.4rem 0 var(--secondary-color, #ff8dcb);
+  text-shadow: 0.4rem 0.4rem 0 var(--secondary-color, #ff8dcb);
 }
 
 .page.theme_light .footer__title {
-    text-shadow: 2px 2px 0 var(--secondary-color, #ff8dcb);
+  text-shadow: 2px 2px 0 var(--secondary-color, #ff8dcb);
 }
-
-
-
-  
-  
-
-
