@@ -3,11 +3,11 @@
   background-color: var(--primary-color-light, #fff1f7);
 }
 
-.page.theme_light .header__theme-menu-button{
+.page.theme_light .header__theme-menu-button {
   color: var(--text-color-light, #353430);
 }
 
-.page.theme_light .header__theme-menu-button_active  {
+.page.theme_light .header__theme-menu-button_active {
   color: var(--text-color-light, #353430);
   outline: 1px solid var(--text-color-light, #353430);
   pointer-events: none;
