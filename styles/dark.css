@@ -1,6 +1,4 @@
 .page.theme_dark {
-  min-inline-size: 375px;
-  block-size: 100%;
   background-image: var(--background-image);
   background-color: var(--primary-color, #000028);
 }
@@ -14,20 +12,12 @@
 }
 
 .page.theme_dark .header__title {
-  color: var(--accent-color, #db00ff);
+  color: var(--accent-color-, #db00ff);
   text-shadow: 4px 4px 0 var(--secondary-color, #ff0070);
 }
 
 .page.theme_dark .text-decor {
   color: var(--primary-color, #000028);
-}
-
-.page.theme_dark .main {
-  background-color: var(--primary-color, #000028);
-}
-
-.page.theme_dark .main-title {
-  background-color: var(--primary-color, #000028);
 }
 
 .page.theme_dark .footer {
@@ -45,7 +35,6 @@
     --secondary-color: #ff0070;
     --accent-color: #db00ff;
     --text-color: #f1b2ce;
-    --hover-color: #ff007066;
     --background-image: url("../images/cover-image-dark.png");
   }
 }
