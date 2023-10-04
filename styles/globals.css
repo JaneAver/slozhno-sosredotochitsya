@@ -1,5 +1,3 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
 *,
 *::before,
 *::after {
@@ -32,6 +30,7 @@ ul {
 picture {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 button,
